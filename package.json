@@ -8,7 +8,7 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {
     "express": "^4.16.3"
