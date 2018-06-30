@@ -13,5 +13,5 @@ Ensure that node, npm (or yarn), and mongod server are installed on your local m
 
 Clone this repo to your machine - _git clone https://github.com/teddynted/mern-crud-with-redux.git_, cd into the directory and run ***npm run start***.
 
-:smile: **Happy Coding!!**
+:thumbsup:
 
