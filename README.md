@@ -11,7 +11,7 @@ Here is a [Demo](https://sleepy-temple-88047.herokuapp.com/) hosted on [Heroku](
 
 Ensure that node, npm (or yarn), and mongod server are installed on your local machine.
 
-Clone this repo to your machine - git clone https://github.com/teddynted/mern-crud-with-redux.git, cd into the directory and run ***npm run start***.
+Clone this repo to your machine - _git clone https://github.com/teddynted/mern-crud-with-redux.git_, cd into the directory and run ***npm run start***.
 
 :smile: **Happy Coding!!**
 
