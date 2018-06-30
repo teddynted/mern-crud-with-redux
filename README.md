@@ -7,3 +7,11 @@ This repository contains a complete code to a simple business directory CRUD( Cr
 
 Here is a [Demo](https://sleepy-temple-88047.herokuapp.com/) hosted on [Heroku](https://www.heroku.com/).
 
+## Run it locally
+
+Ensure that node, npm (or yarn), and mongod server are installed on your local machine.
+
+Clone this repo to your machine - git clone https://github.com/teddynted/mern-crud-with-redux.git, cd into the directory and run ***npm run start***.
+
+:smile: **Happy Coding!!**
+
