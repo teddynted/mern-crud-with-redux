@@ -1,0 +1,21 @@
+{
+  "name": "business-directory",
+  "version": "1.0.0",
+  "description": "Business listings",
+  "main": "index.js",
+  "author": "Teddy Kekana",
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "cors": "^2.8.4",
+    "mongoose": "^5.1.7"
+  }
+}
