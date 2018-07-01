@@ -3,32 +3,27 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3001;
-const cors = require('cors');
 const mongoose = require('mongoose');
 
+// MongoDB connection url
 const mongoURL = 'mongodb://localhost/directory';
 
 const http = require('http');
 
+// Connect to MongoDB
 mongoose.connect( mongoURL, (err, db) => {
     if(err) console.log( 'mongodb Error: ' + err );
 });
 
 app.use(express.static(path.join(__dirname, '../client/build')));
 
-app.use(cors());
-
+// Parse incoming request bodies in a middleware before your handlers
 app.use(bodyParser.json());
-app.use( (req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
-  next()
-});
 
+// Create a server
 const server = http.createServer(app);
 
+// Import routes
 const routes = require('./routes/index')();
 app.use('/', routes);
 

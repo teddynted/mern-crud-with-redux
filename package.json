@@ -10,12 +10,10 @@
     "server": "nodemon server",
     "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
-  "dependencies": {
-    "express": "^4.16.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "concurrently": "^3.6.0",
-    "cors": "^2.8.4",
+    "express": "^4.16.3",
     "mongoose": "^5.1.7"
   }
 }
