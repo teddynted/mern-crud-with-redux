@@ -7,6 +7,7 @@ export const UPDATE_DIRECTORY_ENTRY = 'UPDATE_DIRECTORY_ENTRY';
 export const DELETE_DIRECTORY_ENTRY = 'DELETE_DIRECTORY_ENTRY';
 export const DIRECTORY_LIST_BY_ID = 'DIRECTORY_LIST_BY_ID';
 
+/* Create a business entry */
 export function newDirectoryEntry( fields ){
    const request = axios.post('/create', fields );
    return {
@@ -15,6 +16,7 @@ export function newDirectoryEntry( fields ){
    }
 }
 
+/* Retrieve all businesses */
 export function directoryList(){
    const request = axios.get('/read');
    return {
@@ -23,6 +25,7 @@ export function directoryList(){
    }
 }
 
+/* Retrieve a single record by  id */
 export function directoryListById( id ){
    const request = axios.get('/readbyid/', { params: { id: id } });
    return {
@@ -31,6 +34,7 @@ export function directoryListById( id ){
    }
 }
 
+/* Update business information */
 export function updateDirectoryEntry( fields ){
    const request = axios.put('/update', fields );
    return {
@@ -39,6 +43,7 @@ export function updateDirectoryEntry( fields ){
    }
 }
 
+/* Delete an entry by id */
 export function deleteDirectoryEntry( entryid ){
    const request = axios.delete('/delete', { params : { entryid: entryid } } );
    return {

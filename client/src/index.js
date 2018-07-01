@@ -7,7 +7,7 @@ import createBrowserHistory from "history/createBrowserHistory";
 import promise from "redux-promise";
 import registerServiceWorker from './registerServiceWorker';
 
-import reducers from "./reducers";
+import reducers from "./reducers/directory";
 import App from "./App";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
